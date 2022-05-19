@@ -232,7 +232,6 @@ public class Controller implements ActionListener, ListSelectionListener {
             Line line = new Line(item, price, count, invoice);
             invoice.getLines().add(line);
             LineTableModel linesTableModel = (LineTableModel) frame.getLineTable().getModel();
-            //linesTableModel.getLines().add(line);
             linesTableModel.fireTableDataChanged();
             frame.getInvoicesTableModel().fireTableDataChanged();
         }
