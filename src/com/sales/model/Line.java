@@ -51,5 +51,10 @@ public class Line {
     
     public String getAsCSV() {
         return invoice.getNum() + "," + item + "," + price + "," + count;
-    }    
+    }
+    
+    @Override
+    public String toString() {
+        return "Line{" + "num=" + invoice.getNum() + ", item=" + item + ", price=" + price + ", count=" + count + '}';
+    }
 }

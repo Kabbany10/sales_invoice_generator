@@ -61,4 +61,9 @@ public class Invoice {
         return num + "," + date + "," + customer;
     }
     
+    @Override
+    public String toString() {
+        return "Invoice{" + "num=" + num + ", date=" + date + ", customer=" + customer + '}';
+    }
+    
 }
