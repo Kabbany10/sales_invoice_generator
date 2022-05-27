@@ -132,6 +132,7 @@ public class Controller implements ActionListener, ListSelectionListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        displayInvoices();
     }
 
     private void saveFile() {
@@ -245,5 +246,10 @@ public class Controller implements ActionListener, ListSelectionListener {
         lineDialogue.dispose();
         lineDialogue = null;
     }
-
+    
+    private void displayInvoices() {
+        for (Invoice header : frame.getInvoices()) {
+            System.out.println(header);
+        }
+    }
 }
